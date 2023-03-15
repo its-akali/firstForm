@@ -3,3 +3,117 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+form {
+    margin: 1rem;
+    width: 60%;
+}
+
+/*-------------------------------- BACKGROUND COLOR EDITABLE -------------------------------------*/
+
+input, select, textarea {
+    border-radius: 1rem;
+    border: .5px solid rgb(158, 158, 158);
+    background-color: rgb(231, 231, 231);
+    padding: .3rem .7rem;
+}
+
+input, select {
+    height: 2rem;
+    margin-bottom: .7rem;
+}
+
+/*-------------------------------- BACKGROUND COLOR EDITABLE -------------------------------------*/
+
+fieldset {
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+legend {
+    margin-left: .5rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.colWrap {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.personalData {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* -----------------PROPIEDAD EDITABLE ----------------- */
+
+.personalData>label, .contactData>label, .candidacyData>label {
+    margin-left: .7rem;
+}
+
+/* -----------------PROPIEDAD EDITABLE ----------------- */
+
+.contactData {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.candidacyData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.candidacyData>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selectAndLabel {
+    width: 40%;
+}
+
+.selectAndLabel>select {
+    width: 70%;
+    margin-left: .2rem;
+}
+
+#name, #lname {
+    text-transform: capitalize;
+}
+
+#dni {
+    text-transform: uppercase;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons>input {
+    font-weight: bold;
+    color: white;
+    box-shadow: 3px 4px 10px 2px rgb(177, 177, 177);
+}
+
+.buttons>input:hover {
+    box-shadow: 5px 7px 10px 3px rgb(177, 177, 177);
+    margin-top: -.2rem;
+    cursor: pointer;
+}
+
+.buttonClear {
+    background-color: red;
+}
+
+.buttonSend {
+    background-color: green;
+}

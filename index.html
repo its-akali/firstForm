@@ -8,6 +8,85 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <form action="" method="post">
+        <div class="colWrap">
+            <fieldset class="personalData">
+                <legend>Datos personales</legend>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" maxlength="20" required>
+                <label for="lname">Apellidos</label>
+                <input type="text" name="lname" id="lname" maxlength="40" required>
+                <label for="bdate">Fecha de nacimiento</label>
+                <input type="date" name="bdate" id="bdate" min="1920-01-01" max="2005-03-15" required>
+                <label for="dni">DNI/NIE</label>
+                <input type="text" name="dni" id="dni" maxlength="9" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                <label for="confpassword">Confirmar contraseña</label>
+                <input type="password" name="confpassword" id="confpassword" minlength="8" maxlength="20" required>
+            </fieldset>
+            <fieldset class="contactData">
+                <legend>Datos de contacto</legend>
+                <label for="phone">Teléfono</label>
+                <input type="text" name="phone" id="phone" maxlength="9" pattern="^[9|8|7|6]\d{8}$" required>
+                <label for="address">Dirección</label>
+                <input type="text" name="address" id="address" maxlength="60"required>
+                <label for="address2">Dirección 2 (opcional)</label>
+                <input type="text" name="address2" id="address2" maxlength="60">
+                <label for="city">Ciudad</label>
+                <input type="text" name="city" id="city" maxlength="30" required>
+                <label for="cp">Código Postal</label>
+                <input type="text" name="cp" id="cp" maxlength="7" pattern="[0-9]{1,7}" required>
+                <label for="country">País</label>
+                <select name="country" id="country">
+                    <option value="espana">España</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="reinounido">Reino Unido</option>
+                    <option value="francia">Francia</option>
+                </select>
+                <label for="province">Provincia</label>
+                <select name="province" id="province">
+                    <option value="madrid">Madrid</option>
+                    <option value="cataluna">Cataluña</option>
+                    <option value="castillalamancha">Castilla La Mancha</option>
+                    <option value="paisvasco">País Vasco</option>
+                    <option value="galicia">Galicia</option>
+                </select>
+            </fieldset>
+        </div>
+        <fieldset class="candidacyData">
+            <legend>Datos de candidatura</legend>
+            <div>
+                <div class="selectAndLabel">
+                    <label for="job">Puesto</label>
+                    <select name="job" id="job">
+                        <option value="formador">Formador</option>
+                        <option value="alumno">Alumno</option>
+                        <option value="administracion">Administración</option>
+                        <option value="director">Director</option>
+                    </select>
+                </div>
+                <div class="selectAndLabel">
+                    <label for="employees">Empleados</label>
+                    <select name="employees" id="employees">
+                        <option value="from1to10">1 - 10</option>
+                        <option value="from11to20">11 - 20</option>
+                        <option value="from21to50">21 - 50</option>
+                        <option value="from51to100">51 - 100</option>
+                        <option value="from101to200">101 - 200</option>
+                        <option value="moreThan200">> 200</option>
+                    </select>
+                </div>
+            </div>
+            <label for="comments">Comentarios (opcional)</label>
+            <textarea name="comments" id="comments" cols="10" rows="10" maxlength="250"></textarea>
+        </fieldset>
+        <div class="buttons">
+            <input type="reset" value="Borrar todos los campos" class="buttonClear">
+            <input type="submit" value="Enviar candidatura" class="buttonSend">
+        </div>
+    </form>
 </body>
 </html>
