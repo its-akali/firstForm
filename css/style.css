@@ -110,10 +110,22 @@ legend {
     cursor: pointer;
 }
 
+.buttons>input:active {
+    background-color: white;
+}
+
 .buttonClear {
     background-color: red;
 }
 
+.buttonClear:active {
+    color: red;
+}
+
 .buttonSend {
     background-color: green;
+}
+
+.buttonSend:active {
+    color: green;
 }
